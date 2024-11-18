@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kalpesh Rajput Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Kalpesh Rajput</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bb1.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Kalpesh Rajput</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst at IIECL     ',
+						'Masters in CS: Data Science & AI at Woolf University  ',
+				
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://medium.com/@kr342803" class="btn btn-primary py-3 px-4">Medium</a> 
+						   <a href="https://github.com/Kalpesh-Rajput" class="btn btn-white btn-outline-white py-3 px-4">My works(Github)</a>
+						   <a href="https://www.linkedin.com/in/kalpesh-rajput-811a34184/" class="btn btn-white btn-outline-white py-3 px-4">Linkedin</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images\IMG2.PNG" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Kalpesh Rajput</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>3 Year's</span></p>
+										<p><span class="title-s">Address: </span> <span>Ahmedabad,Gujarat</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With 3 years of experience in data analysis and a strong foundation in Computer Science, currently pursuing a Remote Masters Degree in Data Science and Artificial Intelligence. 
+								   Proficient in Python, machine learning, statistical analysis, and web scraping. Skilled in data visualization using Power BI, Tableau, and Looker Studio, and experienced 
+								   in tools like Google Sheets, Advance Excel functionalities, and Google Forms. Adept at hypothesis testing, customer behavior analysis, and applying key data science techniques to drive actionable insights.
+								   Proven ability to handle complex datasets and support decision-making through impactful analysis and reporting.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Banking, Healthcare, Mineral Water Industry &amp; Product Base Companies</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Commerce & Pursuing Masters in CS : Data Science & AI</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Gujarati, Marathi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker Studio &amp; Tableau</span></li>
+									<li class="d-flex"><span>Skills:</span> <span>Python, SQL, Machine Learning, Power BI, Looker Studio, NumPy ,Pandas ,Scikit-Learn, Matplotlib, BeautifulSoup, MS Office(Advance Excel, Word, PowerPoint),Google Workspace(Advance Google Sheets, Forms),Advance Looker Studio, Data Manipulation, Data Visualization, Machine Learning, Model Deployment, Flask, Django, Statistics</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Learning, Reading Books</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/kalpesh-rajput-811a34184/" class="btn btn-primary py-3 px-3">LinkedIn</a>
+									<a href="https://github.com/Kalpesh-Rajput" class="btn btn-primary py-3 px-3">GitHub</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p> A Data Analyst with 2+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, BI Tools(Power BI, Tableau, Looker Studio) machine learning algorithms and project management.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">IIECL</span>
+						<h2>Data Analyst</h2>
+						<span class="position">Oct 2023 - Present</span>
+						<span class="position">Ahmedabad,Gujarat</span>
+						<p class="mt-4">IIECL, A leading manufacturer and exporter of mineral water turnkey plants with 30+ years of expertise in water and wastewater treatment, an in-house R&D laboratory, 500+ clients, and 2500+ successful installations. 
+							<ul>
+								<li>Leveraged Looker Studio, Power BI functionalities for advanced data exploration, dynamic dashboard creation, and comprehensive report generation, driving data-driven decision-making across the organization.</li>
+								<li>Built marketing dashboards by connecting SQL Server to Power BI, providing stakeholders with real-time, interactive insights for strategic decision-making.</li>
+								<li>Developed a sophisticated leave management system and dynamic dashboards for Finance, Sales, and HR Recruitment using Google Forms, Sheets, and Looker Studio, streamlining processes, improving employee satisfaction, and delivering actionable insights for strategic decision-making</li>
+								<li>Executed projects across finance, operations, and marketing, utilizing advanced Excel formulas for efficient data analysis and producing impactful solutions with diverse tools and technologies. Leveraged advanced Excel formulas for data analysis and manipulation, optimizing workflows and enhancing data accuracy</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Samsung Electronics India PVT LTD</span>
+						<h2>CS Planner (MIS Analyst)</h2>
+						<span class="position">July 2023 - Oct 2023</span>
+						<p class="mt-4">Samsung Electronics, is a leading provider of smartphones, TVs, and home appliances. With advanced manufacturing, R&D facilities, and a strong retail presence. 
+							<ul>
+								<li>Designed and developed interactive dashboards using advanced Excel functionalities to analyze and visualize key metrics, enabling data-driven decision-making for senior management.</li>
+								<li>Managed and analyzed data for Samsung service centers across city, conducting in-depth analysis of customer service requests, including time series analysis to track and resolve delays in service delivery.</li>
+								<li>Visualized service data using Power BI with advanced DAX queries to provide actionable insights, improving service efficiency and operational decision-making.</li>
+								<li>Ensured timely attendance by service engineers (within a day) and resolution of service requests within T+7 days, collaborating with service centers to follow up on daily basis for any delays</li>    
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Zota Healthcare PVT LTD</span>
+						<h2>MIS Analyst</h2>
+						<span class="position">Mar 2023 - June 2023</span>
+						<p class="mt-4">DavaIndia is an abiding initiative of Zota Healthcare ltd which revolutionized the Indian Healthcare scenario by providing high quality generic medicines at a very low cost and this initiative has been acknowledged by many and awarded with TIMES ICON 2019 (TIMES OF INDIA GROUP) 
+							<ul>
+								<li>Managed and analyzed franchise sales data (primary, secondary, and tertiary) across India for DavaIndia, leveraging advanced Excel functionalities for data maintenance and reporting.</li>
+								<li>Created interactive dashboards in Excel, Power BI, and Tableau using advanced formulas and DAX queries, providing actionable insights to support strategic decision-making.</li>
+								<li>Conducted detailed product analysis for millions of items, including beauty and medicine products, and maintained comprehensive stock data sheets to ensure efficient inventory management.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">InduaInd Bank</span>
+						<h2>Teller (Cashier)</h2>
+						<span class="position">Jan 2022 - Mar 2023</span>
+						<p class="mt-4">IndusInd Bank Limited is an Indian financial services headquartered in Mumbai, Maharashtra. IndusInd Bank was inaugurated in April 1994 by then Union Finance Minister Manmohan Singh 
+							<ul>
+								<li>Analyzed customer transaction data to identify patterns, detect fraud, and pitch relevant financial products, achieving cross-sell targets for savings accounts, credit cards, and insurance products.</li>
+								<li>Generated 20+ financial reports daily, providing insights on ATM transactions, cash flow, and customer activity, while maintaining 20+ bank books for accurate reporting.</li>
+								<li>Managed cash transactions using Finacle software, maintaining accurate records with advanced Excel formulas and ensuring compliance with financial standards.</li>
+								<li>Conducted credit analyses for credit card sales, facilitated NEFT/RTGS transactions with precision, and managed bank locker operations and ATM cash loading efficiently.</li>
+								<li>Strengthened client relationships and generated leads using banking software, contributing to revenue growth and future sales opportunities.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Masters in CS: Data Science and Artificial Intelligence</span>
+    					<h2>July 2023 - July 2025</h2>
+    					<span class="position">Woolf University</span>
+    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Bachelor of Commerce (B.com) Undergraduate Degree</span>
+    					<h2>July 2018 - July 2021</h2>
+    					<span class="position">Veer Narmad South Gujarat University</span>
+    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1Q7IWWqOzbGMUVvyVQfbPFW0KQ8N9MF9h/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the Data Science Projects on SQL, Python, ML, Power BI & Tableau.</p>
+          </div>
+        </div>
+        <!-- Heading  -->
+		<div class="row justify-content-center mb-4">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h2 class="mb-4">Machine Learning</h2>
+			  <p>Explore projects leveraging machine learning algorithms to solve business problems.</p>
+			</div>
+		</div>
+		<!-- Heading ended  -->
+		<!-- 1) Student Performance Prediction -->
+		<div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Kalpesh-Rajput/_Student_performance_Prediction" class="block-20 zoom-effect" style="background-image: url('images/ML1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/_Student_performance_Prediction">Student Performance Prediction</a></h3>
+                <p>This project uses Machine Learning to predict student performance and identify at-risk students. It’s deployed with Flask as an interactive web app for data input and performance predictions.</p>
+              </div>
+            </div>
+          </div>
+          
+<!-- 2)Face Recognation Using Flask -->
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Kalpesh-Rajput/Face_Recognation_Using_Flask/tree/main" class="block-20 zoom-effect" style="background-image: url('images/Face_.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/Face_Recognation_Using_Flask/tree/main">Face Recognation Using Flask</a></h3>
+                <p>This project uses Flask to create a web application for face recognition, powered by the face_recognition library and OpenCV. It identifies faces in images or videos and displays results in real time.</p>
+              </div>
+            </div>
+          </div>
+          
+<!-- 3)TED Talks Views Prediction -->
+		  <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Kalpesh-Rajput/TED_Talks_Views_Prediction/tree/main" class="block-20 zoom-effect" style="background-image: url('images/TED.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/TED_Talks_Views_Prediction/tree/main">TED Talks Views Prediction</a></h3>
+                <p>The main objective is to build a predictive model, which could help in predicting the views of the videos uploaded on the TEDx website.</p>
+              </div>
+            </div>
+          </div>
+
+<!-- 4)Netflix Movies and TVShow Clustering -->
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="https://github.com/Kalpesh-Rajput/Netflix_Movies_and_TV_Show_Clustering" class="block-20 zoom-effect" style="background-image: url('images/netflix.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/Netflix_Movies_and_TV_Show_Clustering">Netflix Movies and TVShow Clustering</a></h3>
+			  <p>Project clusters Netflix using attributes like genre, cast, and description. Clustering (K-Means, Agglomerative) and PCA reduced features to 4000 components. A content-based recommender system suggests top 10 similar shows using cosine similarity.</p>
+			</div>
+		  </div>
+		</div>
+
+<!-- 5)Credit Card Default Prediction -->
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="https://github.com/Kalpesh-Rajput/Classification_Credit_Card_Default_Prediction?tab=readme-ov-file" class="block-20 zoom-effect" style="background-image: url('images/CC.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/Classification_Credit_Card_Default_Prediction">Credit Card Default Prediction</a></h3>
+			  <p>This project predicts customer default on credit card payments in Taiwan using classification models. It focuses on estimating default probabilities for risk management and evaluates clients as credible or not using a K-S chart.</p>
+			</div>
+		  </div>
+		</div>
+
+<!-- 6)Bike Sharing Demand Prediction -->
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="https://github.com/Kalpesh-Rajput/Regression_Bike_Sharing_Demand_Prediction" class="block-20 zoom-effect" style="background-image: url('images/BK2.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/Regression_Bike_Sharing_Demand_Prediction">Bike Sharing Demand Prediction</a></h3>
+			  <p>This project uses regression to forecast bike-sharing demand based on historical data, weather, and time-based features, aiding operators in service optimization.</p>
+			</div>
+		  </div>
+		</div>
+
+
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<!-- Heading  -->
+		<div class="row justify-content-center mb-4">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h2 class="mb-4">Data Visualization</h2>
+			  <p>I have utilized Power BI, Tableau, Looker Studio, and Excel to create interactive dashboards, transforming complex data into clear, actionable insights that drive strategic decisions and business success.</p>
+			</div>
+		</div>
+		
+			<!-- 1) Power BI Portfolio -->
+		
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Kalpesh-Rajput/Data_Visualization_Portfolio/blob/main/README.md" class="block-20 zoom-effect" style="background-image: url('images/BI2.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/Data_Visualization_Portfolio/blob/main/README.md">Power BI Portfolio</a></h3>
+				  <p>I specialize in creating interactive dashboards and reports using Power BI, leveraging advanced DAX formulas to analyze complex datasets. My projects focus on delivering actionable insights through dynamic visualizations, enabling stakeholders to track key performance metrics and make data-driven decisions with ease.</p>
+				</div>
+			  </div>
+			</div>
+		
+			<!-- 2) Tableau Dashboard -->
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://public.tableau.com/views/PlayStoreappTableau/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="block-20 zoom-effect" style="background-image: url('images/Tableau.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://public.tableau.com/views/PlayStoreappTableau/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">Tableau Dashboard</a></h3>
+				  <p>Developed an interactive Tableau dashboard for analyzing Play Store app reviews. The dashboard visualizes key metrics such as ratings, review sentiment, and app performance, enabling users to explore trends, identify user feedback patterns, and make data-driven decisions for app improvement.</p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- 3 ) Looker Studio -->
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://lookerstudio.google.com/reporting/7ab72edb-d76f-42df-a550-5be2019e4599" class="block-20 zoom-effect" style="background-image: url('images/looker.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://lookerstudio.google.com/reporting/7ab72edb-d76f-42df-a550-5be2019e4599">Looker Studio</a></h3>
+				  <p>Created an interactive sales dashboard in Looker Studio to visualize key metrics like revenue trends, regional performance, and customer behavior, enabling data-driven decisions with dynamic charts and filters.</p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- 4) Excel Sashboard -->
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Kalpesh-Rajput/Data_Visualization_Portfolio/blob/main/Excel%20Dashboard/Excel_Portfolio.md" class="block-20 zoom-effect" style="background-image: url('images/EX.JPG');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/Data_Visualization_Portfolio/blob/main/Excel%20Dashboard/Excel_Portfolio.md">Excel Dashboard</a></h3>
+				  <p>Showcasing a diverse portfolio of Excel dashboards, including HR Analytics, Sales, and Financial Analysis. Leveraging advanced Excel features like pivot tables, slicers, and data visualization, these projects deliver actionable insights for strategic decision-making.</p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- 5) SQL Analysis -->
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Kalpesh-Rajput/Music_Store_Analysis_SQL/tree/main" class="block-20 zoom-effect" style="background-image: url('images/music.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/Music_Store_Analysis_SQL/tree/main">SQL Project</a></h3>
+				  <p>The Music Store Data Analysis project involves analyzing a dataset from a hypothetical music store to derive insights and answer specific business questions.The objectives include identifying top-performing cities, and music genres, customer purchases, and artist contributions.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+	<br>
+	  	
+	
+	<!-- Will Use in future projects  -->
+	<!-- Heading  -->
+		<!-- <div class="row justify-content-center mb-4">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h2 class="mb-4">Data Visualization</h2>
+			  <p>I have utilized Power BI, Tableau, Looker Studio, and Excel to create interactive dashboards, transforming complex data into clear, actionable insights that drive strategic decisions and business success.</p>
+			</div>
+		</div>
+		
+		1) Power BI Portfolio
+		
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Kalpesh-Rajput/Data_Visualization_Portfolio/blob/main/README.md" class="block-20 zoom-effect" style="background-image: url('images/BI2.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/Data_Visualization_Portfolio/blob/main/README.md">Power BI Portfolio</a></h3>
+				  <p>I specialize in creating interactive dashboards and reports using Power BI, leveraging advanced DAX formulas to analyze complex datasets. My projects focus on delivering actionable insights through dynamic visualizations, enabling stakeholders to track key performance metrics and make data-driven decisions with ease</p>
+				</div>
+			  </div>
+			</div>
+
+			2) Tableau Dashboard
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://public.tableau.com/views/PlayStoreappTableau/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="block-20 zoom-effect" style="background-image: url('images/Tableau.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://public.tableau.com/views/PlayStoreappTableau/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">Tableau Dashboard</a></h3>
+				  <p>Developed an interactive Tableau dashboard for analyzing Play Store app reviews. The dashboard visualizes key metrics such as ratings, review sentiment, and app performance, enabling users to explore trends, identify user feedback patterns, and make data-driven decisions for app improvement.</p>
+				</div>
+			  </div>
+			</div>
+			
+			3 ) Looker Studio
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://lookerstudio.google.com/reporting/7ab72edb-d76f-42df-a550-5be2019e4599" class="block-20 zoom-effect" style="background-image: url('images/looker.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://lookerstudio.google.com/reporting/7ab72edb-d76f-42df-a550-5be2019e4599">Looker Studio</a></h3>
+				  <p>Created an interactive sales dashboard in Looker Studio to visualize key metrics like revenue trends, regional performance, and customer behavior, enabling data-driven decisions with dynamic charts and filters.</p>
+				</div>
+			  </div>
+			</div>
+
+			4) Excel Sashboard
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Kalpesh-Rajput/Data_Visualization_Portfolio/blob/main/Excel%20Dashboard/Excel_Portfolio.md" class="block-20 zoom-effect" style="background-image: url('images/EX1.JPG');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Kalpesh-Rajput/Data_Visualization_Portfolio/blob/main/Excel%20Dashboard/Excel_Portfolio.md">Excel Dashboard</a></h3>
+				  <p>Showcasing a diverse portfolio of Excel dashboards, including HR Analytics, Sales, and Financial Analysis. Leveraging advanced Excel features like pivot tables, slicers, and data visualization, these projects deliver actionable insights for strategic decision-making.</p>
+				</div>
+			  </div>
+			</div> -->
+
+
+		 </div>
+	  </div>
+
+    </section>
+
+	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data insights </h4>
+						<br>
+						<p><a href="https://github.com/Kalpesh-Rajput" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Ahmedabad, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 7405542960</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">kr342803@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1Q7IWWqOzbGMUVvyVQfbPFW0KQ8N9MF9h/view?usp=sharing">Resume link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/kavDVd6E46facnDM9" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <!-- <li class="ftco-animate normal-txt">Find me on  </li> -->
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/kalpesh-rajput-811a34184/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
+				      <!-- <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://github.com/Kalpesh-Rajput"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://medium.com/@kr342803"><span class="icon-medium"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
